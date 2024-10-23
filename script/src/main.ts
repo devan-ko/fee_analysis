@@ -210,18 +210,20 @@ switch (command) {
     case "mint_3_shared_objects":
         mint_3_shared_objects();
         break;
-    // 0x57e1f52326bacfc392e211c846828bb2b43df31e31427018b6c4b7f9b4751aed
-    // 0xb66ab59b8bf66011320f1c351026e26a298d133644e61b6c1793f4b4108360c4
-    // 0xbd3bbcc47c2209fe5b75af563c5dba2c9744134da34fd4f166857bf0762e8807
     case "add_init_table_contents":
         add_init_table_contents(process.argv[3]);
         break;
+    // 0x57e1f52326bacfc392e211c846828bb2b43df31e31427018b6c4b7f9b4751aed
+    // 0xb66ab59b8bf66011320f1c351026e26a298d133644e61b6c1793f4b4108360c4
+    // 0xbd3bbcc47c2209fe5b75af563c5dba2c9744134da34fd4f166857bf0762e8807
+    // Spent 1129124 MIST
     case "dry_run_use_borrow_mut":
         dry_run_use_borrow_mut(process.argv[3]);
         break;
     // 0x1ecc99c03f416dde63cb7fa32158de65382577c5d70fd2614f6aa48a1a4101b8
     // 0x49530ced297acec155c70a966e21a23605fe73563b044f77b32e4d08761f94fc
     // 0xf0b6abca573f25367641a1bf5d81e2db2a4d69a9a982007c0576dc631fd61325
+    // Spent 3165316 MIST
     case "dry_run_use_table_add":
         dry_run_use_table_add(process.argv[3]);
         break;
