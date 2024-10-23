@@ -27,7 +27,7 @@ const mint_3_objects = async () => {
     tx.setSender(signerAddress);
     tx.moveCall({
         package: PACKAGE_ID,
-        module: "bsu_fee_analysis",
+        module: "fee_analysis",
         function: "mint_3_objects",
         arguments: [
             tx.pure.address(signerAddress),
@@ -53,7 +53,7 @@ const mint_one_sharedObject = async () => {
     tx.setSender(signerAddress);
     tx.moveCall({
         package: PACKAGE_ID,
-        module: "bsu_fee_analysis",
+        module: "fee_analysis",
         function: "mint_one_sharedObject",
     });
     tx.setGasBudget(1000000000);
@@ -76,7 +76,7 @@ const mint_3_shared_objects = async () => {
     tx.setSender(signerAddress);
     tx.moveCall({
         package: PACKAGE_ID,
-        module: "bsu_fee_analysis",
+        module: "fee_analysis",
         function: "mint_3_shared_objects",
     });
     tx.setGasBudget(1000000000);
@@ -99,7 +99,7 @@ const add_init_table_contents = async (object_id: string) => {
     tx.setSender(signerAddress);
     tx.moveCall({
         package: PACKAGE_ID,
-        module: "bsu_fee_analysis",
+        module: "fee_analysis",
         function: "add_init_table_contents",
         arguments: [
             tx.object(ONE_SHARED_OBJECT_ID),
@@ -126,7 +126,7 @@ const dry_run_use_borrow_mut = async (object_id: string) => {
     tx.setSender(signerAddress);
     tx.moveCall({
         package: PACKAGE_ID,
-        module: "bsu_fee_analysis",
+        module: "fee_analysis",
         function: "add_table_contents_through_vec_map",
         arguments: [
             tx.object(ONE_SHARED_OBJECT_ID),
@@ -165,7 +165,7 @@ const dry_run_use_table_add = async (shard_object_id: string) => {
     tx.setSender(signerAddress);
     tx.moveCall({
         package: PACKAGE_ID,
-        module: "bsu_fee_analysis",
+        module: "fee_analysis",
         function: "add_table_contents_through_table",
         arguments: [
             tx.object(shard_object_id),
